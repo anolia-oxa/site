@@ -228,7 +228,9 @@ body {
   color: #ffffff;
   background-color: #00e0d0;
 }
-
+a {
+  cursor: pointer;
+}
 button {
   background: none;
   cursor: pointer;
