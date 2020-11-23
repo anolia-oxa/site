@@ -1,0 +1,43 @@
+//10:51
+//https://www.youtube.com/watch?v=hoC_fjeL6P4&ab_channel=%D0%A4%D1%80%D0%B8%D0%BB%D0%B0%D0%BD%D1%81%D0%B5%D1%80%D0%BF%D0%BE%D0%B6%D0%B8%D0%B7%D0%BD%D0%B8-IT%D0%B8%D1%84%D1%80%D0%B8%D0%BB%D0%B0%D0%BD%D1%81
+/*
+  -webkit-:
+  -moz-:
+  -ms-:
+  -o-:
+  :
+ */
+@mixin anim($time, $delay) {
+  -webkit-transition: all $time ease $delay;  -moz-transition:  all $time ease $delay;  -ms-transition:  all $time ease $delay;  -o-transition:  all $time ease $delay;  transition:  all $time ease $delay;}
+
+@mixin anim_cubic($time, $delay){
+  -webkit-transition: all $time cubic-bezier(0.68, -0.55,0.265, 1.55) $delay; -moz-transition: all $time cubic-bezier(0.68, -0.55,0.265, 1.55) $delay;  -ms-transition: all $time cubic-bezier(0.68, -0.55,0.265, 1.55) $delay;  -o-transition: all $time cubic-bezier(0.68, -0.55,0.265, 1.55) $delay;  transition: all $time cubic-bezier(0.68, -0.55,0.265, 1.55) $delay;}
+
+@mixin animate($name, $time, $infinite, $type){
+  -webkit-animation: $name $time+s $infinite $type; -moz-animation: $name $time+s $infinite $type; -ms-animation: $name $time+s $infinite $type; -o-animation: $name $time+s $infinite $type;animation:  $name $time+s $infinite $type;}
+
+@mixin rotate($deg) {
+  -webkit-transform: rotate($deg); -moz-transform: rotate($deg); -ms-transform: rotate($deg); o-transform:  rotate($deg);  transform:rotate($deg);}
+
+@mixin scale($num){
+  -moz-transform: scale($num); -ms-transform: scale($num); -webkit-transform: scale($num); o-transform:  scale($num); transform:  scale($num); }
+
+
+@mixin cnt($h){
+  display: flex;   flex-direction: column;  height:$h;  text-align: center;  align-items: stretch;  justify-content: center;}
+
+@mixin flexbox(){
+  display:-webkit-box;  display: -moz-box;  display: -ms-flexbox;  display:-webkit-flex;  display:flex;  font-size: 0;}
+
+@mixin flexboxinline(){
+  displa: inline-flex;  display:-webkit-inline-flex;  display: -moz-inline-flex;  display: -ms-inline-flex;  display: -o-inline-flex;}
+
+@mixin flexorder($val){
+  -webkit-box-ordinal-group:$val;
+  -moz-box-ordinal-group:$val;
+  -ms-box-ordinal-group:$val;
+  -webkit-order:$val;
+  order:$val;}
+
+@mixin tr($x,$y,$z) {
+  transform: translate3d($x,$y,$z);  -webkit-transform:translate3d($x,$y, $z);  -ms-transform: translate3d($x,$y,$z);  -o-transform: translate3d($x,$y,$z);}

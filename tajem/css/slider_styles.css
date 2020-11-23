@@ -1,0 +1,265 @@
+@charset "UTF-8";
+/*
+  -webkit-:
+  -moz-:
+  -ms-:
+  -o-:
+  :
+ */
+/*
+@media:
+
+@media (max-width: $mediaWidth1){}
+@media (max-width: $mediaWidth2){}
+@media (max-width: $mediaWidth3){}
+@media (max-width: $mediaWidth4){}
+@media (max-width: $mediaWidth5){}
+@media (max-width: $mediaWidth6){}
+
+ */
+.comment-container-slider_user {
+  max-width: 390px;
+  margin: 0 auto;
+  padding: 0px 30px;
+}
+@media (max-width: 450px) {
+  .comment-container-slider_user {
+    max-width: 280px;
+  }
+}
+@media (max-width: 290px) {
+  .comment-container-slider_user {
+    max-width: 270px;
+  }
+}
+
+.comment-container-slider_comment {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+  align-items: flex-start;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
+.slider_show {
+  position: relative;
+  z-index: 2;
+}
+
+.slider_show .img_simbol {
+  position: relative;
+  z-index: 2;
+}
+
+.slider_user {
+  position: relative;
+}
+.slider_user_item {
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+}
+.slider_user_item_img {
+  transition: all 0.3s ease 0s;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 64%;
+  height: 64%;
+}
+.slider_user_item_img img {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+}
+.slider_user_item.slick-center.slick-active .slider_user_item_img {
+  width: 100%;
+  height: 100%;
+}
+.slider_user .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  /* Если вместо стрелок вправо-влево использовать рисунок:
+      margin: -30px 0px 0px 0px;
+      width: 30px;
+      height: 60px;
+  */
+}
+.slider_user .slick-arrow.slick-prev {
+  border: none;
+  background: none;
+  left: -30px;
+  top: 30%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.slider_user .slick-arrow.slick-prev:focus {
+  outline: none;
+}
+.slider_user .slick-arrow.slick-prev:before {
+  content: "";
+  top: 8px;
+  left: 0px;
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background-color: #8a8694;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.slider_user .slick-arrow.slick-prev:after {
+  content: "";
+  bottom: 8px;
+  left: 0px;
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background-color: #8a8694;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.slider_user .slick-arrow.slick-next {
+  border: none;
+  background: none;
+  right: -30px;
+  top: 30%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.slider_user .slick-arrow.slick-next:after {
+  content: "";
+  bottom: 8px;
+  right: 0px;
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background-color: #8a8694;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.slider_user .slick-arrow.slick-next:before {
+  content: "";
+  top: 8px;
+  right: 0px;
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background-color: #8a8694;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.slider_user .slick-arrow.slick-next:focus {
+  outline: none;
+}
+.slider_user .slick-dots {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+  align-items: center;
+  justify-content: center;
+}
+.slider_user .slick-dots li {
+  list-style: none;
+}
+.slider_user .slick-dots li.slick-active button {
+  background-color: #64c29e;
+}
+.slider_user .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.slider_user .slick-list {
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+.slider_comment {
+  padding: 40px 10px;
+}
+.slider_comment_text {
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: 400;
+}
+.slider_comment_name {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 22px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 36px 0px 0px 0px;
+}
+.slider_comment_position {
+  font-size: 13px;
+  line-height: 22px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=slider_styles.css.map */
